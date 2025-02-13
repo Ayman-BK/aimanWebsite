@@ -17,9 +17,9 @@
     <header id="home">
         <div class="navbar">
             <nav>
-                <a href="#home" id="logo">{BK} Aiman Omar</a>
+                <a href="index.html" id="logo">{BK} Aiman Omar</a>
                 <ul>
-                    <li><a href="#home">Home |</a></li>
+                    <li><a href="index.html">Home |</a></li>
                     <li><a href="#about">About |</a></li>
                     <li><a href="#services">Features |</a></li>
                     <li><a href="#portfolio">Work Collection |</a></li>
@@ -34,7 +34,7 @@
                 <div class="social">
                     <a href="https://www.linkedin.com/in/aiman-omar-bk10/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/Ayman-BK" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/ayman_bk_135/" target="_blank"><i class="fa-brands fa-instagram"></i></a>    
+                    <a href="https://x.com/Aiman_Omar_10" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>    
                 </div>
                 <a href="#portfolio" class="btn-primary">Work Collection <i class="fa-solid fa-circle-arrow-down"></i></a>
             </div>
@@ -137,7 +137,7 @@
                         <img src="./img/bk.png" alt="Ayman BK" >
                         <div class="item-content">
                             <h3>Ayman BK</h3>
-                            <a href="https://www.instagram.com/ayman_bk_135/" target="_blank">Go to Website</a>
+                            <a href="https://github.com/Ayman-BK" target="_blank">Go to Website</a>
                         </div>
                     </div>
                     <div class="item">
@@ -174,15 +174,32 @@
             </div>
         </section>
         <!-- End Contact -->
+        <!-- Start cookies -->
+        <div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #333; color: #fff; text-align: center; padding: 10px;">
+            <p>Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung der Website stimmen Sie der Verwendung von Cookies zu. <a href="mehrErfahren.html" target="_blank" style="color: #ff8800;">Mehr erfahren</a>.</p>
+            <button id="acceptCookies" style="background-color: #ff8800; border: none; padding: 5px 10px;">Akzeptieren</button>
+        </div>
+        
+        <script>
+          document.getElementById('acceptCookies').onclick = function() {
+            document.getElementById('cookieConsent').style.display = 'none';
+            localStorage.setItem('cookieConsent', 'true');
+          };
+        
+          if (localStorage.getItem('cookieConsent')) {
+            document.getElementById('cookieConsent').style.display = 'none';
+          }
+        </script>
+        <!-- Start cookies -->
     </main>
     <!-- Start Footer -->
     <footer id="footer">
         <p class="footer-nav">
             <a href="index.html">Home</a>
-            <a href="#about">Impresum</a>
-            <a href="https://en.wikipedia.org/wiki/Cookie" target="_blank" >Cookies </a>
-            <a href="https://en.wikipedia.org/wiki/Privacy" target="_blank">Privacy </a>
-            <a href="#contact">Report a peoblem</a>
+            <a href="impressum.html" target="_blank">Impresum</a>
+            <a href="cookies.html" target="_blank" >Cookies </a>
+            <a href="privacy.html" target="_blank">Privacy </a>
+            <a href="reportAProblem.html" target="_blank">Report a peoblem</a>
         </p>
         <p class="copyright">© Copyright 2025 Aiman Omar | All rights reserved </p>
     </footer>
