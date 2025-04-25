@@ -6,11 +6,11 @@ from email.mime.multipart import MIMEMultipart
 app = Flask(__name__)
 
 # إعدادات البريد الإلكتروني
-SMTP_SERVER = 'ayman.bk.135@gmail.com'  # استبدلها بمزود البريد الإلكتروني الخاص بك
+SMTP_SERVER = 'info@aimanomar.de'  # استبدلها بمزود البريد الإلكتروني الخاص بك
 SMTP_PORT = 465  # أو 465 إذا كنت تستخدم SSL     587
-SMTP_USERNAME = 'ayman.bk.135@egmail.com'  # استبدلها بعنوان بريدك الإلكتروني
-SMTP_PASSWORD = '12345'  # استبدلها بكلمة المرور الخاصة بك
-RECIPIENT_EMAIL = 'ayman.bk.135@gmail.com'  # البريد الإلكتروني المستلم
+SMTP_USERNAME = 'info@aimanomar.de'  # استبدلها بعنوان بريدك الإلكتروني
+SMTP_PASSWORD = 'Ayman-BK-135'  # استبدلها بكلمة المرور الخاصة بك
+RECIPIENT_EMAIL = 'info@aimanomar.de'  # البريد الإلكتروني المستلم
 
 @app.route('/')
 def index():
