@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem melden</title>
+</head>
+<body>
+    <h1>Problem melden</h1>
+    <p>Haben Sie ein Problem oder einen Fehler auf unserer Website entdeckt? Bitte melden Sie ihn hier, damit wir ihn so schnell wie möglich beheben können.</p>
+
+    <h2>Problem melden</h2>
+    <form action="/submit-problem" method="POST" enctype="multipart/form-data">
+        <label for="name">Aiman Omar:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">info@aimanomar.de:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="problemDescription">Beschreibung des Problems:</label><br>
+        <textarea id="problemDescription" name="problemDescription" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="screenshot">Screenshot (optional):</label>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*"><br><br>
+
+        <input type="submit" value="Problem senden">
+    </form>
+
+    <h2>Kontaktieren Sie uns direkt</h2>
+    <p>Wenn Sie das Problem schnell lösen müssen, können Sie uns auch direkt per E-Mail kontaktieren:</p>
+    <p>E-Mail: <a href="https://workspace.google.com/intl/de/gmail/" target="_blank">info@aimanomar.de</a></p>
+
+    <h2>Datenschutz</h2>
+    <p>Wir respektieren Ihre Privatsphäre. Alle Informationen, die Sie uns zur Verfügung stellen, werden vertraulich behandelt und nur zur Bearbeitung des gemeldeten Problems verwendet.</p>
+</body>
+</html>
